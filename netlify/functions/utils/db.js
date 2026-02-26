@@ -7,14 +7,21 @@ const connectDB = async () => {
     return cachedDb;
   }
 
+  // Check if MONGODB_URI is defined
+  if (!process.env.MONGODB_URI) {
+    const error = new Error(
+      'MONGODB_URI environment variable is not defined. ' +
+      'Please add it in Netlify Dashboard: Site configuration → Environment variables'
+    );
+    console.error('❌ Configuration Error:', error.message);
+    throw error;
+  }
+
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    const conn = await mongoose.connect(process.env.MONGODB_URI);
     
     cachedDb = conn;
-    console.log('✅ MongoDB Connected');
+    console.log('✅ MongoDB Connected to:', process.env.MONGODB_URI.split('@')[1]?.split('/')[0] || 'database');
     return cachedDb;
   } catch (error) {
     console.error('❌ MongoDB Connection Error:', error.message);
