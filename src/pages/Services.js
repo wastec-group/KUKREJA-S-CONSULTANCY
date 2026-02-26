@@ -171,7 +171,7 @@ function Services() {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-          {services.map((service, index) => {
+          {loanServices.map((service, index) => {
             // Map each service to its dedicated page
             const serviceRoutes = {
               'Home Loan': '/home-loan',
