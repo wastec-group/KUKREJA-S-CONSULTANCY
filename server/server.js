@@ -9,8 +9,20 @@ const app = express();
 // Connect to MongoDB
 connectDB();
 
+// CORS Configuration - Allow frontend domain
+const corsOptions = {
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5000',
+    'https://kukreja-s-consultancy.onrender.com',
+    'https://kukreja-consultancy.onrender.com'
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
