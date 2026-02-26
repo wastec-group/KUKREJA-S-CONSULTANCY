@@ -2,7 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
-import Services from './pages/Services';
+import Loans from './pages/Loans';
+import Insurance from './pages/Insurance';
+import AIAutomation from './pages/AIAutomation';
 import LoansDetail from './pages/LoansDetail';
 import InsuranceDetail from './pages/InsuranceDetail';
 import AIAutomationDetail from './pages/AIAutomationDetail';
@@ -31,7 +33,9 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/loans" element={<Loans />} />
+          <Route path="/insurance" element={<Insurance />} />
+          <Route path="/ai-automation" element={<AIAutomation />} />
           <Route path="/home-loan" element={<HomeLoan />} />
           <Route path="/loan-against-property" element={<LoanAgainstProperty />} />
           <Route path="/business-loan" element={<BusinessLoan />} />
