@@ -17,16 +17,20 @@ function Layout({ children }) {
                 Home
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-royal-600 to-royal-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
-              <Link to="/services" className="text-slate-700 hover:text-royal-600 transition-all duration-300 font-semibold relative group">
-                Services
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-royal-600 to-royal-500 transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-              <Link to="/loan-inquiry" className="text-slate-700 hover:text-royal-600 transition-all duration-300 font-semibold relative group">
-                Loan Inquiry
+              <Link to="/loans" className="text-slate-700 hover:text-royal-600 transition-all duration-300 font-semibold relative group">
+                Loans
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-royal-600 to-royal-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link to="/real-estate" className="text-slate-700 hover:text-royal-600 transition-all duration-300 font-semibold relative group">
                 Real Estate
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-royal-600 to-royal-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link to="/insurance" className="text-slate-700 hover:text-royal-600 transition-all duration-300 font-semibold relative group">
+                Insurance
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-royal-600 to-royal-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+              <Link to="/ai-automation" className="text-slate-700 hover:text-royal-600 transition-all duration-300 font-semibold relative group">
+                AI Automation
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-royal-600 to-royal-500 transition-all duration-300 group-hover:w-full"></span>
               </Link>
               <Link to="/about" className="text-slate-700 hover:text-royal-600 transition-all duration-300 font-semibold relative group">
