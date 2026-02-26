@@ -19,3 +19,7 @@ yarn-error.log*
 
 # Local data
 data/
+
+# Render env template (keep for reference)
+# .env.render
+
