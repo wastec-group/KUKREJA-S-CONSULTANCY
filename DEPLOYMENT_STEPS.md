@@ -103,11 +103,11 @@ Your serverless functions need a database. Here's how to get it FREE:
 ### Create Database User
 1. You'll see a prompt to create a user
 2. Username: `kukrejaadmin`
-3. Password: Create a strong password (SAVE IT!)
+3. Password: Create a strong password (SAVE IT!)- c8dxyCooae17TU28
 4. Click **"Create Database User"**
 
 ### Allow Network Access
-1. Click **"Add Current IP Address"**
+1. Click **"Add Current IP Address"** -36.255.88.122
 2. Then click **"Network Access"** in left menu
 3. Click **"Add IP Address"**
 4. Select **"Allow Access from Anywhere"** (0.0.0.0/0)
