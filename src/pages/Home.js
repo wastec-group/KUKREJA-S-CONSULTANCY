@@ -114,7 +114,7 @@ function Home() {
           <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
         </span>
       </a>
-      <Link to="/services" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:scale-125 transition-transform duration-300">
+      <Link to="/contact" className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer hover:scale-125 transition-transform duration-300">
         <svg className="w-6 h-6 text-navy-700" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
